@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barbería Norte: cortes de pelo y arreglo de barba.">
+  <title>Barbería Norte | Estilo y precisión</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111512;
+      color: #f5f2e9;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 8%;
+      border-bottom: 1px solid #383d36;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo { font-size: 20px; font-weight: bold; }
+    nav a { color: #f5f2e9; margin-left: 16px; text-decoration: none; }
+
+    .hero {
+      padding: 85px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #202a22, #111512);
+    }
+
+    .hero p { color: #d1d4ca; }
+
+    h1 { font-size: clamp(36px, 7vw, 64px); line-height: 1.1; }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      background: #d7b779;
+      color: #171812;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    section { padding: 48px 8%; }
+    h2 { font-size: 30px; }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+
+    .service {
+      padding: 22px;
+      border: 1px solid #41463d;
+      border-radius: 10px;
+      background: #1b201c;
+    }
+
+    .price { color: #e4c78b; font-size: 23px; font-weight: bold; }
+    .muted { color: #c4c8bd; }
+
+    footer {
+      padding: 25px 8%;
+      border-top: 1px solid #383d36;
+      color: #c4c8bd;
+    }
+
+    @media (max-width: 520px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav a { margin: 0 12px 0 0; }
+      .hero { padding: 55px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BARBERÍA NORTE</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>ESTILO · PRECISIÓN · PERSONALIDAD</p>
+      <h1>Tu estilo empieza aquí.</h1>
+      <p>Cortes de pelo y arreglo de barba en un ambiente único.</p>
+      <a class="button"
+         href="https://wa.me/34621245806?text=Hola%2C%20quiero%20reservar%20una%20cita"
+         target="_blank" rel="noopener">
+        Reservar por WhatsApp
+      </a>
+    </section>
+
+    <section id="servicios">
+      <h2>Nuestros servicios</h2>
+      <p class="muted">Precios de ejemplo para esta demostración.</p>
+
+      <div class="services">
+        <article class="service">
+          <h3>Corte clásico</h3>
+          <p class="muted">Un corte limpio y personalizado.</p>
+          <p class="price">15 €</p>
+        </article>
+
+        <article class="service">
+          <h3>Corte + barba</h3>
+          <p class="muted">Un look completo y cuidado.</p>
+          <p class="price">22 €</p>
+        </article>
+
+        <article class="service">
+          <h3>Arreglo de barba</h3>
+          <p class="muted">Perfilado y acabado detallado.</p>
+          <p class="price">10 €</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Ven a conocernos</h2>
+      <p class="muted">Dirección de ejemplo: Calle Mayor, 10.</p>
+      <p class="muted">Horario de ejemplo: lunes a sábado, 10:00–20:00.</p>
+      <a class="button"
+         href="https://www.google.com/maps"
+         target="_blank" rel="noopener">
+        Consultar ubicación
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Barbería Norte · Proyecto de demostración
+  </footer>
+</body>
+</html>
